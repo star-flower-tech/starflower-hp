@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="starflower logo">
+  <defs>
+    <!-- 1枚の花びら（上向き）。回転して6枚に使い回す -->
+    <path id="petal" d="M50,50 C44,43 41,26 50,13 C59,26 56,43 50,50Z"/>
+  </defs>
+
+  <!-- 6枚の花びら（60°ずつ回転） -->
+  <use href="#petal" fill="#FF6B35"/>
+  <use href="#petal" fill="#FF6B35" transform="rotate(60,50,50)"/>
+  <use href="#petal" fill="#FF6B35" transform="rotate(120,50,50)"/>
+  <use href="#petal" fill="#FF6B35" transform="rotate(180,50,50)"/>
+  <use href="#petal" fill="#FF6B35" transform="rotate(240,50,50)"/>
+  <use href="#petal" fill="#FF6B35" transform="rotate(300,50,50)"/>
+
+  <!-- 中心の点（ダーク） -->
+  <circle cx="50" cy="50" r="8" fill="#1A1A2E"/>
+</svg>
