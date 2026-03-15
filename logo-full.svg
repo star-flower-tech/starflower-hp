@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" width="260" height="80" role="img" aria-label="starflower">
+  <defs>
+    <path id="petal-f" d="M40,40 C35.2,34.4 32.8,20.8 40,10.4 C47.2,20.8 44.8,34.4 40,40Z"/>
+  </defs>
+
+  <!-- アイコン（中心:40,40 / 半径37の空間に収める） -->
+  <use href="#petal-f" fill="#FF6B35"/>
+  <use href="#petal-f" fill="#FF6B35" transform="rotate(60,40,40)"/>
+  <use href="#petal-f" fill="#FF6B35" transform="rotate(120,40,40)"/>
+  <use href="#petal-f" fill="#FF6B35" transform="rotate(180,40,40)"/>
+  <use href="#petal-f" fill="#FF6B35" transform="rotate(240,40,40)"/>
+  <use href="#petal-f" fill="#FF6B35" transform="rotate(300,40,40)"/>
+  <circle cx="40" cy="40" r="6.4" fill="#1A1A2E"/>
+
+  <!-- テキスト："star"（ダーク）+ "flower"（オレンジ） -->
+  <text y="52" font-family="Poppins, Inter, -apple-system, sans-serif" font-weight="600" font-size="32" letter-spacing="-0.5">
+    <tspan x="90" fill="#1A1A2E">star</tspan><tspan fill="#FF6B35">flower</tspan>
+  </text>
+</svg>
