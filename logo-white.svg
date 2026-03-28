@@ -1,23 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80" role="img" aria-label="starflower">
-  <!-- White version: for dark/color backgrounds -->
-  <defs>
-    <path id="sf-petal-w" d="M40,40 L37,23 L40,7 L43,23 Z"/>
-  </defs>
-
-  <!-- Petals: white -->
-  <use href="#sf-petal-w" fill="#FFFFFF"/>
-  <use href="#sf-petal-w" fill="#FFFFFF" transform="rotate(60,40,40)"/>
-  <use href="#sf-petal-w" fill="#FFFFFF" transform="rotate(120,40,40)"/>
-  <use href="#sf-petal-w" fill="#FFFFFF" transform="rotate(180,40,40)"/>
-  <use href="#sf-petal-w" fill="#FFFFFF" transform="rotate(240,40,40)"/>
-  <use href="#sf-petal-w" fill="#FFFFFF" transform="rotate(300,40,40)"/>
-
-  <!-- Center: coral orange -->
-  <circle cx="40" cy="40" r="5" fill="#FF6B47"/>
-
-  <!-- Wordmark: white, ultra-light -->
-  <text x="90" y="46" font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif" font-size="25" font-weight="200" fill="#FFFFFF" letter-spacing="3.5">starflower</text>
-
-  <!-- Tagline: semi-transparent white -->
-  <text x="91" y="63" font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif" font-size="8.5" font-weight="300" fill="rgba(255,255,255,0.55)" letter-spacing="4">Bloom with Technology.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 48" width="250" height="48" role="img" aria-label="starflower">
+  <!-- White version for dark backgrounds -->
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF" transform="rotate(60,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF" transform="rotate(120,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF" transform="rotate(180,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF" transform="rotate(240,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FFFFFF" transform="rotate(300,24,24)"/>
+  <text x="64" y="29" font-family="'Helvetica Neue','Segoe UI',Arial,sans-serif" font-size="19" font-weight="300" fill="#FFFFFF" letter-spacing="2">starflower</text>
+  <text x="65" y="42" font-family="'Helvetica Neue','Segoe UI',Arial,sans-serif" font-size="7" font-weight="400" fill="rgba(255,255,255,0.5)" letter-spacing="3">Bloom with Technology.</text>
 </svg>

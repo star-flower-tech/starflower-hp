@@ -7,7 +7,7 @@
   <meta name="description" content="starflowerへのお問い合わせ・無料相談はこちらから。住まいセレクト・AI活用支援・マーケティング支援についてお気軽にご相談ください。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,15 +15,15 @@
   <!-- Header -->
   <header class="header" id="header">
     <div class="container">
-      <a href="index.html" class="logo"><img src="logo-full.svg" alt="starflower" height="36" style="display:block;"></a>
+      <a href="index.html" class="logo"><img src="logo-full.svg" alt="starflower" height="30"></a>
       <nav class="nav" id="nav">
         <ul>
           <li><a href="services.html">サービス</a></li>
           <li><a href="about.html">会社概要</a></li>
           <li><a href="https://note.com/" target="_blank" rel="noopener">ブログ</a></li>
-          <li><a href="contact.html" class="btn-nav active">無料相談</a></li>
         </ul>
       </nav>
+      <a href="contact.html" class="btn-header" style="background:#FF6B47;">無料相談</a>
       <button class="hamburger" id="hamburger" aria-label="メニュー">
         <span></span><span></span><span></span>
       </button>
@@ -33,7 +33,7 @@
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="container">
-      <span class="section-label">CONTACT</span>
+      <span class="sec-label">CONTACT</span>
       <h1>お問い合わせ</h1>
       <p>まずは無料相談から。どんな些細なことでもお気軽にどうぞ。</p>
     </div>
@@ -42,50 +42,48 @@
   <!-- Contact Section -->
   <section class="section">
     <div class="container">
-      <div class="contact-inner">
+      <div class="contact-grid">
 
         <!-- Info -->
-        <div class="contact-info fade-in">
-          <h2>こんなご相談も<br>お気軽に</h2>
+        <div class="fade-in">
+          <h2 class="contact-title">こんなご相談も<br>お気軽に</h2>
           <div class="contact-items">
             <div class="contact-item">
-              <span class="contact-item-icon">🏠</span>
+              <span class="contact-dot"></span>
               <div>
                 <h4>住まいセレクトについて</h4>
                 <p>掲載方法・集客効果・業務効率化について聞きたい</p>
               </div>
             </div>
             <div class="contact-item">
-              <span class="contact-item-icon">🤖</span>
+              <span class="contact-dot"></span>
               <div>
                 <h4>AI活用支援について</h4>
                 <p>AIを使ってみたいが何から始めればいいかわからない</p>
               </div>
             </div>
             <div class="contact-item">
-              <span class="contact-item-icon">📊</span>
+              <span class="contact-dot"></span>
               <div>
                 <h4>マーケティングについて</h4>
                 <p>Web広告・SNS・写真撮影について相談したい</p>
               </div>
             </div>
             <div class="contact-item">
-              <span class="contact-item-icon">💬</span>
+              <span class="contact-dot"></span>
               <div>
                 <h4>何でも相談</h4>
                 <p>「何から始めればいいかわからない」でも大丈夫です</p>
               </div>
             </div>
           </div>
-          <div class="contact-note">
-            <p>📩 返信は通常1〜2営業日以内にお送りします</p>
-          </div>
+          <p class="contact-note">返信は通常1〜2営業日以内にお送りします</p>
         </div>
 
         <!-- Form -->
         <div class="contact-form-wrap fade-in">
-          <!-- Formspree を使用（無料・登録不要で月50件まで） -->
-          <!-- 使い方: https://formspree.io でアカウント作成後、YOUR_FORM_ID を置き換えてください -->
+          <!-- Formspree を使用（無料・月50件まで） -->
+          <!-- https://formspree.io でアカウント作成後、YOUR_FORM_ID を置き換えてください -->
           <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-group">
               <label for="name">お名前 <span class="required">*</span></label>
@@ -126,26 +124,28 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <div class="footer-logo"><img src="logo-white.svg" alt="starflower" height="28" style="display:block;"></div>
-          <p>千葉県を拠点に、住宅業界と中小企業のデジタル化・集客をサポートします。</p>
+          <img src="logo-white.svg" alt="starflower" height="26">
+          <p>星の数ほどの花を、咲かせる。<br>Bloom with Technology.</p>
         </div>
-        <div class="footer-links">
-          <h4>サービス</h4>
-          <ul>
-            <li><a href="services.html#sumai">住まいセレクト</a></li>
-            <li><a href="services.html#ai">AI活用支援</a></li>
-            <li><a href="services.html#marketing">マーケティング支援</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>会社情報</h4>
-          <ul>
-            <li><a href="about.html">会社概要</a></li>
-            <li><a href="contact.html">お問い合わせ</a></li>
-            <li><a href="https://note.com/" target="_blank" rel="noopener">ブログ（note）</a></li>
-          </ul>
+        <div class="footer-nav">
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#sumai">住まいセレクト</a></li>
+              <li><a href="services.html#ai">AI活用支援</a></li>
+              <li><a href="services.html#marketing">マーケティング支援</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">会社概要</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="https://note.com/" target="_blank" rel="noopener">ブログ</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">

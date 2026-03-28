@@ -1,16 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-label="starflower icon">
-  <defs>
-    <path id="sf-icon-petal" d="M40,40 L37,23 L40,7 L43,23 Z"/>
-  </defs>
-
-  <!-- 6-point starburst: sharp, geometric, modern -->
-  <use href="#sf-icon-petal" fill="#FF6B47"/>
-  <use href="#sf-icon-petal" fill="#FF6B47" transform="rotate(60,40,40)"/>
-  <use href="#sf-icon-petal" fill="#FF6B47" transform="rotate(120,40,40)"/>
-  <use href="#sf-icon-petal" fill="#FF6B47" transform="rotate(180,40,40)"/>
-  <use href="#sf-icon-petal" fill="#FF6B47" transform="rotate(240,40,40)"/>
-  <use href="#sf-icon-petal" fill="#FF6B47" transform="rotate(300,40,40)"/>
-
-  <!-- Center -->
-  <circle cx="40" cy="40" r="5" fill="#1A1A2E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="starflower">
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47" transform="rotate(60,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47" transform="rotate(120,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47" transform="rotate(180,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47" transform="rotate(240,24,24)"/>
+  <path d="M24,24 L22,13.5 L24,3 L26,13.5Z" fill="#FF6B47" transform="rotate(300,24,24)"/>
 </svg>
