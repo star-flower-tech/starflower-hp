@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Flower CMS</title>
+  <meta name="description" content="Star FlowerのHPニュース、固定ページ、更新タスクを管理するCMS。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="os.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="メインナビゲーション">
+      <a class="brand" href="./" aria-label="Star Flower CMS home">
+        <img src="../assets/starflower-logo-blue.png" alt="">
+        <span>Star Flower CMS</span>
+      </a>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="home"><span>⌂</span>ホーム</button>
+        <button class="nav-item" data-view="news"><span>✎</span>ニュース</button>
+        <button class="nav-item" data-view="pages"><span>▤</span>ページ</button>
+        <button class="nav-item" data-view="customers"><span>◎</span>顧客</button>
+        <button class="nav-item" data-view="tasks"><span>✓</span>更新タスク</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span>設定</button>
+      </nav>
+      <div class="sidebar-card">
+        <p class="small-label">CMS Focus</p>
+        <strong>HPを自分で更新する</strong>
+        <span>ニュース公開、ページ改善、更新タスクの管理だけに絞ります。</span>
+      </div>
+      <div class="account-mini">
+        <div class="avatar">渡</div>
+        <div><strong>渡嘉敷 海志</strong><span>代表 / 管理者</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="small-label">Website Content Management</p>
+          <h1 id="viewTitle">ホーム</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-btn" id="sitePreviewBtn">サイトを見る</button>
+          <button class="primary-btn" data-jump="news">ニュースを書く</button>
+        </div>
+      </header>
+
+      <section class="view active" id="home">
+        <div class="summary-grid">
+          <article class="summary-card"><p>公開ニュース</p><strong>12</strong><small>トップ掲載 3件</small></article>
+          <article class="summary-card warning"><p>下書き</p><strong>2</strong><small>公開待ちの記事</small></article>
+          <article class="summary-card"><p>固定ページ</p><strong>4</strong><small>全ページ公開中</small></article>
+          <article class="summary-card accent"><p>売上メモ</p><strong>¥1,240,000</strong><small>見込み含む</small></article>
+        </div>
+
+        <div class="home-layout">
+          <section class="panel">
+            <div class="panel-head"><h2>最近のニュース</h2><button class="text-btn" data-jump="news">一覧へ</button></div>
+            <div id="recentNews" class="news-list"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>ページ状態</h2><button class="text-btn" data-jump="pages">管理する</button></div>
+            <div class="table-wrap"><table id="pageSummary"></table></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>次に更新すること</h2><button class="text-btn" data-jump="tasks">タスクへ</button></div>
+            <div id="homeTasks" class="task-list"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>顧客と売上</h2><button class="text-btn" data-jump="customers">顧客へ</button></div>
+            <div class="table-wrap"><table id="customerSummary"></table></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="news">
+        <div class="section-toolbar">
+          <div><h2>ニュース</h2><p>HPのお知らせを作成・編集し、トップページ掲載を切り替えます。</p></div>
+          <button class="primary-btn">新規ニュース</button>
+        </div>
+        <div class="news-layout">
+          <section class="panel editor-panel">
+            <h2>ニュース編集</h2>
+            <div class="form-grid single">
+              <label>タイトル<input type="text" value="夏季休業のお知らせ"></label>
+              <label>公開日<input type="date" value="2026-08-22"></label>
+              <label>カテゴリ<select><option>お知らせ</option><option>サービス</option><option>実績</option></select></label>
+              <label>状態<select><option>公開</option><option>下書き</option></select></label>
+              <label>トップページ掲載<select><option>掲載する</option><option>掲載しない</option></select></label>
+              <label>本文<textarea>平素よりStar Flowerをご利用いただきありがとうございます。夏季休業期間についてお知らせいたします。</textarea></label>
+            </div>
+            <div class="button-row"><button class="ghost-btn">下書き保存</button><button class="primary-btn">公開する</button></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>ニュース一覧</h2><button class="text-btn">公開ページを見る</button></div>
+            <div id="newsList" class="news-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="pages">
+        <div class="section-toolbar">
+          <div><h2>ページ</h2><p>トップ、サービス、会社概要、お問い合わせの状態と更新メモを管理します。</p></div>
+          <button class="primary-btn">更新メモを追加</button>
+        </div>
+        <div class="page-grid" id="pageCards"></div>
+      </section>
+
+      <section class="view" id="customers">
+        <div class="section-toolbar">
+          <div><h2>顧客</h2><p>請求機能ではなく、売上見込み・関係性・次回フォローを見るための軽い台帳です。</p></div>
+          <button class="primary-btn">顧客を追加</button>
+        </div>
+        <div class="customer-layout">
+          <section class="panel">
+            <div class="panel-head"><h2>顧客一覧</h2><button class="text-btn">CSV出力</button></div>
+            <div class="table-wrap"><table id="customerTable"></table></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>売上サマリー</h2><button class="text-btn">今月を見る</button></div>
+            <div id="salesSummary" class="sales-grid"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="tasks">
+        <div class="section-toolbar">
+          <div><h2>更新タスク</h2><p>HP改善のToDoを優先度と期限で管理します。</p></div>
+          <button class="primary-btn">タスクを追加</button>
+        </div>
+        <section class="panel">
+          <div class="table-wrap"><table id="taskTable"></table></div>
+        </section>
+      </section>
+
+      <section class="view" id="settings">
+        <div class="section-toolbar">
+          <div><h2>設定</h2><p>サイト基本情報、OGP、問い合わせ先、Search Consoleなど。</p></div>
+        </div>
+        <div class="settings-grid">
+          <article class="panel"><h2>サイト基本情報</h2><p>サイト名、説明文、会社情報、問い合わせ先メールを管理。</p></article>
+          <article class="panel"><h2>SEO / OGP</h2><p>トップページのタイトル、説明文、OGP画像、SNS表示を管理。</p></article>
+          <article class="panel"><h2>公開設定</h2><p>Cloudflare Pages、Access保護、Google Search Console連携。</p></article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="os.js"></script>
+</body>
+</html>
